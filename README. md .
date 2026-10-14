@@ -1,0 +1,37 @@
+# Student Attendance Register App
+
+An Android application developed in Kotlin to manage and monitor daily student attendance. Built as part of a collaborative academic assignment.
+
+---
+
+## Features
+
+- **Add Students**: Dynamically input student names and append them to an interactive class register list.
+- **Mark Attendance**: Toggle student status between **Present** and **Absent** in real time with intuitive color feedback (green for present, red for absent).
+- **Live Summary Counters**: Automatically recalculates and displays the **Total Students**, **Present Count**, and **Absent Count** whenever records update.
+- **Empty State Notification**: Displays a placeholder message when no student entries exist.
+- **Reset Register**: Clears all records with an `AlertDialog` confirmation prompt to avoid accidental deletion.
+
+---
+
+## Tech Stack & Architecture
+
+- **Language**: Kotlin
+- **IDE**: Android Studio
+- **UI Components**: LinearLayout, ListView, EditText, Button, TextView, AlertDialog
+- **Adapter**: Custom `BaseAdapter` (`StudentAdapter`) with dynamic view recycling and UI callbacks
+- **Version Control**: Git & GitHub
+
+---
+
+## Project Structure
+
+```text
+app/src/main/
+├── java/com/example/studentattendanceregister/
+│   ├── MainActivity.kt        # Application lifecycle, input handling, counter updates
+│   ├── Student.kt             # Data model representing student state
+│   └── StudentAdapter.kt      # Custom BaseAdapter handling list row actions
+└── res/layout/
+    ├── activity_main.xml      # Main screen layout with counters, inputs, and list view
+    └── item_student.xml       # Custom list item row layout with status buttons
