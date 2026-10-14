@@ -1,0 +1,20 @@
+# Student Attendance Register App
+
+An Android application built with Kotlin and XML layouts to track and manage student attendance.
+
+## Group Members
+* **Eugene Kibet** - Lead Developer
+* **Boen Kelly** - Documentation & Feature Testing
+
+## Features
+* **Add Student:** Dynamically add students to the attendance register with input validation.
+* **Attendance Tracking:** Mark individual students as Present or Absent using interactive controls.
+* **Real-Time Summary:** Dynamically calculated counts for Total, Present, and Absent students.
+* **Visual Status Highlighting:** Distinct row background indicators for Present (green) and Absent (red).
+* **Reset Register:** Clear all records with a confirmation dialog alert.
+* **Empty State View:** User-friendly message displayed when no students are listed.
+
+## Tech Stack
+* **Language:** Kotlin
+* **UI Toolkit:** Android Views (XML layouts, LinearLayout, ListView)
+* **Architecture:** Custom `BaseAdapter` with View Binding logic
